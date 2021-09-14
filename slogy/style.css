@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+body{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-image: url('http://ae01.alicdn.com/kf/HTB1Wb8POxTpK1RjSZFKq6y2wXXat/Ambesonne-3D.jpg');
+background-size: 100% ;
+font-family: 'Architects Daughter', cursive;
+cursor: pointer;
+position: relative;
+}
+.modal-window-test{
+    transition: 1s;
+    /* display: none; */
+    position: absolute;
+    top: -150px;
+    z-index: 999;
+    width: 300px;
+    height: 80px;
+    text-align: center;
+    padding-top: 40px;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.9;
+    border-radius: 8px;
+    font-size: 30px;
+}
+.containers{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 600px;
+    height: 600px;
+   
+}
+.containers-card{
+    background-color: rgb(191, 191, 191);
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 180px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    transition: 0.5s;
+}
+.containers-card:hover,
+.containers-card:active{
+    transition: 0.5s;
+    font-size: 75px;
+}
+.resultBad{
+    background-color: rgb(208, 53, 53);
+}
+.resultGood{
+    background-color: rgb(40, 157, 40)!important;
+}
+#reloadWin, #start, #how__number {
+    font-size: 25px ;
+    width: 100px;
+    height: 100px;
+    border-radius: 30px;
+    background: rgb(243, 243, 111) ;
+    color: rgb(68, 62, 62);
+    border: none;
+    outline: none;
+    font-family: 'Architects Daughter', cursive;
+    cursor: pointer;
+}
+#start{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+}
+#reloadWin{
+    position: absolute;
+    top: 100%;
+    right: 50px;
+}
+#how__number{
+    position: absolute;
+    top: 250px;
+    left: 50px;
+}
+/* loader */
+.animate-modal{
+    animation:  getOut 3s linear;
+}
+@keyframes getOut{
+0%{
+    position: absolute;
+    top: -150px;
+}
+20%{
+    top: 15px;
+}
+80%{
+    top: 15px;
+}
+100%{
+    top: -150px;
+}
+}
+
+/* .slideInDown {
+    -webkit-animation-name: slideInDown;
+    animation-name: slideInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes slideInDown {
+    0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    visibility: visible;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    }
+    }
+    @keyframes slideInDown {
+    0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    visibility: visible;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    }
+    }  */
